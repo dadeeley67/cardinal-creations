@@ -5,7 +5,7 @@
 /* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #hero {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Nocturne", "Arial", sans-serif;
     /* Centers button */
     text-align: center;
     /* changes on tablet */
@@ -202,96 +202,167 @@
 /*-- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
-/* Mobile */
-@media only screen and (min-width: 0em) {
-  .services {
-    width: 90%;
-    max-width: 82.5em;
-    margin: auto;
-    margin-top: -10.4375em;
-    margin-bottom: 3.125em;
-    padding: 3.125em 1.25em;
-    background: #fff;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05);
-    border-top: 0.375em solid var(--primary);
-    border-radius: 0.3125em;
-    position: relative;
-    z-index: 100;
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #services-690 {
+    padding: var(--sectionPadding);
   }
-  .services .card {
+  #services-690 .cs-container {
     width: 100%;
-    max-width: 22.3125em;
+    /* changes to 1280px at tablet */
+    max-width: 34.375rem;
     margin: auto;
-    margin-bottom: 3.125em;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
   }
-  .services .card:last-of-type {
-    margin-bottom: 0;
+  #services-690 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
   }
-  .services .card picture {
-    width: 5.5em;
-    height: 5.5em;
-    margin: auto;
-    margin-bottom: 1.4375em;
-    background: var(--primary);
-    border-radius: 50%;
+  #services-690 .cs-flex-group {
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #services-690 .cs-color {
+    color: var(--primary);
+  }
+  #services-690 .cs-card-group {
+    width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    row-gap: 1rem;
   }
-  .services .card picture img {
-    width: 3em;
-    height: 3em;
+  #services-690 .card {
+    list-style: none;
+    background-color: var(--primary);
+    padding: clamp(1.25rem, 4vw, 2.5rem) 1.5rem;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
   }
-  .services .card h2 {
-    font-size: 2em;
-    font-weight: 700;
-    line-height: 1.35em;
-    text-align: center;
-    margin-bottom: 0.65em;
-    color: #1a1a1a;
+  #services-690 .card:hover {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+    transform: translateY(-0.4375rem);
   }
-  .services .card p {
-    line-height: 1.3333333333em;
-    text-align: center;
+  #services-690 .card:hover .picture:before {
     width: 100%;
-    opacity: 0.7;
+    height: 100%;
+    opacity: 1;
   }
-}
-/* Inbetween */
-@media only screen and (min-width: 768px) {
-  .services {
-    font-size: min(1.8vw, 1em);
-    width: 98%;
+  #services-690 .cs-item {
+    list-style: none;
+    width: 100%;
+    border-radius: 1em;
+    /* 24px - 40px top & bottom */
+    padding: clamp(1.25rem, 4vw, 2.5rem) 1.5rem;
+    background-color: #f7f8f8;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+  }
+  #services-690 .cs-item:hover {
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 50px;
+    transform: translateY(-0.4375rem);
+  }
+  #services-690 .cs-item:hover .cs-picture:before {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+  }
+  #services-690 .cs-item .cs-picture {
+    margin-bottom: 2em;
+  }
+  #services-690 .cs-link {
+    text-decoration: none;
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  .services .card {
-    max-width: 20.3125em;
+  #services-690 .cs-h3 {
+    font-size: 1.25rem;
+    font-weight: 900;
+    text-align: center;
+    line-height: 1.2em;
     margin: 0;
+    margin-bottom: 0.75rem;
+    color: var(--headerColor);
+    transition: color 0.3s;
+  }
+  #services-690 .cs-item-text {
+    /* 14px - 16px */
+    font-size: clamp(0.875rem, 1.5vw, 1rem);
+    text-align: center;
+    line-height: 1.5em;
+    margin: 0;
+    color: var(--bodyTextColor);
+    transition: color 0.3s;
   }
 }
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
-  .services {
-    padding: 3.125em 5em;
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #services-690 .cs-container {
+    max-width: 80rem;
   }
-  .services .card {
-    max-width: 22.3125em;
+  #services-690 .cs-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
+  }
+  #services-690 .cs-flex-group {
+    width: 50%;
+  }
+  #services-690 .cs-card-group {
+    /* pushes down the same amount the 2nd cards are translated down to maintain the even spacing at the bottom of the cs-card-group */
+    margin-bottom: 2.5rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 1.25rem;
+  }
+  #services-690 .cs-item {
+    width: 30vw;
+    max-width: 25.8125rem;
+  }
+  #services-690 .cs-item:nth-of-type(2) {
+    transform: translateY(2.5rem);
+  }
+  #services-690 .cs-item:nth-of-type(2):hover {
+    /* make these cards a separate hover translate amount, they're already translated 40px down, so to match the same hover animations as the other cards we just subtract their translate values from the 40px and they will move up by the same amount as the other cards */
+    transform: translateY(2.0625rem);
   }
 }
-/* Dark mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode #services {
-    background: var(--medium);
+/* Dark Mode */
+@media only screen and (min-width: 0rem) {
+  body.dark-mode #services-690 .cs-topper {
+    color: var(--primaryLight);
   }
-  body.dark-mode #services picture {
-    background: var(--primaryDark);
+  body.dark-mode #services-690 .cs-title,
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-h3,
+  body.dark-mode #services-690 .cs-item-text {
+    color: var(--bodyTextColorWhite);
   }
-  body.dark-mode #services h2 {
-    font-weight: bold;
-    color: #fff;
+  body.dark-mode #services-690 .cs-text,
+  body.dark-mode #services-690 .cs-item-text {
+    opacity: 0.8;
+  }
+  body.dark-mode #services-690 .cs-item {
+    background-color: var(--medium);
   }
 }
 

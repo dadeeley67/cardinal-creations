@@ -93,17 +93,17 @@
         .cs-flex-group {
             /* 16px - 32px */
             padding: clamp(1rem, 3vw, 2rem);
-            background-color: #f7f7f7;
+            background-color: var(--primary);
             border-radius: calc(16 / 16 * 1rem);
             position: relative;
+            margin-bottom: 1em;
         }
 
         .cs-flex-p {
             /* 14px - 16px */
             font-size: clamp(0.875rem, 1.5vw, 1rem);
             line-height: 1.5em;
-            margin: 0 0 calc(16 / 16 * 1rem);
-            color: #353535;
+            color: var(--backgroundColor);
         }
 
         .cs-name {

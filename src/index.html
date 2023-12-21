@@ -1,7 +1,6 @@
 ---
 title: 'Cardinal Creations'
 description: 'Meta description for the page'
-preloadImg: '/assets/images/landing.jpg'
 permalink: '/'
 eleventyNavigation:
   key: /home
@@ -11,8 +10,8 @@ eleventyNavigation:
 {% extends "layouts/base.html" %}
 
 {% block head %}
-    <link rel="stylesheet" href="/assets/css/local.css" />
-    <link rel="stylesheet" href="/assets/css/critical.css" />
+    <link rel="stylesheet" href="/assets/css/local.css"/>
+    <link rel="stylesheet" href="/assets/css/critical.css"/>
 
     <!-- Script for Netlify Identity -->
     <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
@@ -39,7 +38,7 @@ eleventyNavigation:
     <!--                    Hero                      -->
     <!-- ============================================ -->
 
-    <section id="hero">
+    {# <section id="hero">
         <div class="cs-container">
             <div class="cs-flex-group">
                 <span class="cs-topper">mountain hiking society</span>
@@ -68,60 +67,13 @@ eleventyNavigation:
             <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
             <img aria-hidden="true" decoding="async" src="/assets/images/landing.jpg" alt="new home" width="2500" height="1667" loading="eager">
         </picture>
-    </section>
-
-    <!-- ============================================ -->
-    <!--                  Services                    -->
-    <!-- ============================================ -->
-
-    <section id="services" class="services">
-        <!-- Get Icons From flaticon.com -->
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service1.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 1</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service2.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 2</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-        <div class="card">
-            <picture>
-                <img
-                aria-hidden="true"
-                decoding="async"
-                src="/assets/svgs/service3.svg"
-                alt="appliance"
-                width="48"
-                height="48" />
-            </picture>
-            <h2>Service 3</h2>
-            <p>Talk about the service with keywords people will be searching for it by. Keep it 1-2 sentences.</p>
-        </div>
-    </section>
+    </section> #}
 
     <!-- ============================================ -->
     <!--                 Side By Side                 -->
     <!-- ============================================ -->
 
-    <section id="sbs">
+    {# <section id="sbs">
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
@@ -159,10 +111,38 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/SideBySide/quote-white.svg"
                     alt="gavel"
                     width="136"
-                    height="77" />
+                    height="77"/>
                 </div>
                 <a href="/about" class="cs-button-solid">More About Us</a>
             </div>
+        </div>
+    </section> #}
+
+    <section class="intro">
+        <div class="container">
+            <h2 class="cs-title">Hello! I'm Dave.</h2>
+            <p class="cs-text">Nice to meet you. I am, among many things, a software engineer, a web designer, a baker, a musician, and occasionally, a barista. <em>Cardinal Creations</em> is the name of my web design business. The inspiration for the name is two-fold: the definition of the word cardinal, and my grandfather.</p>
+            <p class="blockquote">
+                cardinal: of the greatest importance; fundamental.
+            </p>
+            <p class="cs-text">In this day and age, <strong>everything</strong> is online. Whether that is a good thing is a totally separate discussion (maybe you'll find some thoughts about it in my <a href="/blog">blog</a>!), but it is a difficult proposition to argue against. Therefore, as a small business, you <strong>must</strong> have an online presence. Somewhere you can point potential customers or clients to prove you are <em>
+                    <strong>legitimate</strong>
+                </em>, somewhere you can <em>
+                    <strong>display your work</strong>
+                </em>, somewhere you can <em>
+                    <strong>sell your work.</strong>
+                </em>
+            </p>
+            <h2 class="cs-title">Why Cardinal Creations</h2>
+            <p class="cs-text">I believe that having a great website should be of upmost importance to a modern business, a <em>cardinal principle,</em> if you will. That is one of the reasons I chose the name <em>Cardinal Creations.</em> The other, more personal reason, has to do with my grandfather, who passed away in September of 2023. When I was a child, my grandfather and I spent a lot of time together: watching movies, going fishing at the crack of dawn, metal detecting, and bird watching at his kitchen table.</p>
+            <p class="cs-text">He built a bird feeder and set it up outside of the kitchen window, and we would eat slices of whole wheat toast with butter (he's the first person to introduce me to the idea of bread that <strong>wasn't</strong> pale, flaccid, and tasteless, so he was tangentially the inspiration for my love of baking bread, as well!) and watch birds perch on the feeder. He would tell me about the different kind of birds that we'd see, and his favorite bird was, you guessed it, the cardinal. Naturally, it is my favorite bird, too.</p>
+            <h2 class="cs-title">What Now</h2>
+            <p class="cs-text">Okay, okay, a sentimental backstory isn't what I'm supposed to be pitching you, what I should really be doing is trying to <em>
+                    <strong>convince you</strong>
+                </em> that you should <em>
+                    <strong>purchase</strong>
+                </em> my services, right? That's what a business is all about, after all. Well, I think having a more personal connection with the people that you work with is one of the <em>great</em> benefits of running/working with a small business. I've told you a little bit about me (and you can learn more about me and the things I do by reading through my <a href="/blog/">blog</a>), and hopefully, you'll tell me a little bit about <em>you</em>, by going to my <a href="/contact/">contact page</a> and sending me an email or shooting me a message on social media! If you wanna see my work, check out <a href="https://superofficialdrinksetc.com">superofficial</a> or <a href="https://theduncefactory.film">The Dunce Factory</a>. I hope you like them, and I hope I hear from you soon!</p>
+            {# <a href="/portfolio" class="cs-button-solid">Our Portfolio</a> #}
         </div>
     </section>
 
@@ -170,7 +150,7 @@ eleventyNavigation:
     <!--            Extra Content To Rank             -->
     <!-- ============================================ -->
 
-    <section id="sbs-r">
+    {# <section id="sbs-r">
         <div class="cs-container">
             <!-- Left Image Section -->
             <div class="cs-left">
@@ -198,85 +178,70 @@ eleventyNavigation:
                 <a href="/blog" class="cs-button-solid">Read our Blog</a>
             </div>
         </div>
-    </section>
+    </section> #}
 
     <!-- ============================================ -->
-    <!--                   Gallery                    -->
+    <!--            Portfolio                         -->
     <!-- ============================================ -->
 
-    <section id="gallery">
+    {# <section id="services-690">
         <div class="cs-container">
-            <span class="cs-topper">Our Portfolio</span>
-            <h2 class="cs-title">Et orci volutpat, back up generator installations</h2>
-            <div class="cs-image-group">
-                <!-- Row 1-->
-                <div class="cs-row cs-row-1">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port1-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port1.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port1.jpg" alt="new hallway" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port4-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port4.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port4.jpg" alt="new home construction" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port7-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port7.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port7.jpg" alt="building a new wall" loading="lazy" width="400" height="560">
-                    </picture>
+            <div class="cs-content">
+                <div class="cs-flex-group">
+                    <span class="cs-topper">Portfolio</span>
+                    <h2 class="cs-title">See What We've Done <span class="cs-color">Get What You Need</span></h2>
                 </div>
-                <!-- Row 2 -->
-                <div class="cs-row cs-row-2">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port2-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port2.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port2.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port5-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port5.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port5.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port8-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port8.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port8.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-                </div>
-                <!-- Row 3 -->
-                <div class="cs-row cs-row-3">
-                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
-                    <picture class="cs-picture cs-picture1">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port3-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port3.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port3.jpg" alt="new kitchen" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture2">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port6-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port6.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port6.jpg" alt="apartment addition" loading="lazy" width="400" height="560">
-                    </picture>
-                    <picture class="cs-picture cs-picture3">
-                        <source media="(max-width: 600px)" srcset="/assets/images/portfolio/port9-m.jpg">
-                        <source media="(min-width: 601px)" srcset="/assets/images/portfolio/port9.jpg">
-                        <img aria-hidden="true" decoding="async" src="/assets/images/portfolio/port9.jpg" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
-                    </picture>
-
-                </div>
+                <p class="cs-text">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                </p>
             </div>
-            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+            <ul class="cs-card-group">
+                <li class="cs-item">
+                    <a href="https://superofficialdrinksetc.com/" class="cs-link">
+                        <picture class="cs-picture cs-picture1">
+                            <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                            <source media="(min-width: 601px)" srcset="assets/images/portfolio/so_screenshot.png">
+                            <img aria-hidden="true" decoding="async" src="assets/images/portfolio/so_screenshot.png" alt="screenshot of superofficial.com homepage" loading="lazy" width="320" height="308">
+                        </picture>
+                        <h3 class="cs-h3">superofficial</h3>
+                        <p class="cs-item-text">
+                            The coolest coffee shop in Rome, NY, and frankly, all of CNY. You won't find a better cup of coffee or a cappucino anywhere else. You also won't find a cooler website! Go check it out, and while you're there, order a drink.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="https://theduncefactory.film/" class="cs-link">
+                        <picture class="cs-picture cs-picture1">
+                            <source media="(max-width: 600px)" srcset="/assets/images/construction-m.jpg">
+                            <source media="(min-width: 601px)" srcset="assets/images/portfolio/tdf_screenshot.png">
+                            <img aria-hidden="true" decoding="async" src="assets/images/portfolio/tdf_screenshot.png" alt="screenshot of superofficial.com homepage" loading="lazy" width="320" height="308">
+                        </picture>
+                        <h3 class="cs-h3">The Dunce Factory</h3>
+                        <p class="cs-item-text">
+                            Are you into film photography? Well, you will be after you visit The Dunce Factory. Nothing compares to the sweet, analog feel of a true blue photograph, and now, you can have that film shipped directly to your door and your photos developed and emailed straight to your inbox! Go check The Dunce Factory out, and maybe even check out some of the photos I took with my camera and film that I purchased from Josh over there.
+                        </p>
+                    </a>
+                </li>
+                <li class="cs-item">
+                    <a href="https://orsarengineering.com" class="cs-link">
+                        <picture class="cs-picture">
+                            <img class="cs-icon" src="https://csimg.nyc3.cdn.digitaloceanspaces.com/Icons%2Fsquares.svg" loading="lazy" decoding="async" alt="icon" width="32" height="32" aria-hidden="true">
+                        </picture>
+                        <h3 class="cs-h3">ORSAR Engineering</h3>
+                        <p class="cs-item-text">
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum architecto obcaecati quas reiciendis numquam dolore Lorem ipsum dolor sit amet. Lorem, ipsum dolor!
+                        </p>
+                    </a>
+                </li>
+            </ul>
         </div>
-    </section>
+    </section> #}
 
     <!-- ============================================ -->
     <!--                   Reviews                    -->
     <!-- ============================================ -->
 
-    <section id="reviews">
+    {# <section id="reviews">
         <div class="cs-container">
             <span class="cs-topper">Our Reviews</span>
             <h2 class="cs-title">Words From Our Customers</h2>
@@ -294,7 +259,7 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
                     alt="profile picture"
                     width="80"
-                    height="80" />
+                    height="80"/>
                     <p class="cs-item-p">
                         Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
                     </p>
@@ -310,7 +275,7 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
                     alt="stars"
                     width="96"
-                    height="16" />
+                    height="16"/>
                 </li>
                 <!-- Review 2 -->
                 <li class="cs-item">
@@ -322,7 +287,7 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
                     alt="profile picture"
                     width="80"
-                    height="80" />
+                    height="80"/>
                     <p class="cs-item-p">
                         Dictum dolor, nullam morbi sem in auctor proin. Consequat dolor habitasse nam sed tempor. Viverra magna pharetra rhoncus, nec sed ullamcorper lectus et. Auctor velit diam fermentum consequat. Feugiat viverra massa urna, volutpat orci imperdiet eget eget.
                     </p>
@@ -338,12 +303,12 @@ eleventyNavigation:
                     src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
                     alt="stars"
                     width="96"
-                    height="16" />
+                    height="16"/>
                 </li>
             </ul>
             <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
         </div>
-    </section>
+    </section> #}
 
     {% include 'components/cta.html' %}
 {% endblock %}

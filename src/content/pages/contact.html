@@ -3,6 +3,9 @@ title: 'Contact'
 description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
+eleventyNavigation:
+  key: /contact
+  order: 500
 ---
 
 {% extends "layouts/base.html" %}
@@ -73,9 +76,9 @@ permalink: 'contact/'
                 <span class="cs-header">Address</span>
                 <a class="cs-link" href="{{client.address.mapLink}}">
                     {{client.address.lineOne}},
-                    <br />
+                    <br/>
                     {{client.address.lineTwo}},
-                    <br />
+                    <br/>
                     <span class="cs-block">
                         {{client.address.city}}
                         {{client.address.state}}
