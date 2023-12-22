@@ -46,7 +46,7 @@
         .cs-text {
             text-align: left;
             /* 404px - 522px */
-            max-width: clamp(25.25rem, 30vw, 32.625rem);
+            // max-width: clamp(25.25rem, 30vw, 32.625rem);
             margin: 0 auto 0 0;
             /* 40px - 48px */
             margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
@@ -54,6 +54,7 @@
 
         #cs-form {
             margin-bottom: calc(40 / 16 * 1rem);
+
             label {
                 font-size: calc(16 / 16 * 1rem);
                 font-weight: 700;
@@ -103,7 +104,7 @@
         }
 
         .cs-right-section {
-            height: calc(320 / 16 * 1rem);
+            // height: calc(320 / 16 * 1rem);
             /* 24px - 40px top & bottom */
             /* 20px - 40px left & right */
             padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
@@ -115,6 +116,7 @@
             position: relative;
             /* cuts off corners on img tag */
             overflow: hidden;
+            background-color: var(--primary);
         }
 
         .cs-header {
@@ -183,11 +185,9 @@
                 content: "";
                 width: 100%;
                 height: 100%;
-                background: linear-gradient(
-                    180deg,
-                    rgba(0, 0, 0, 0) 0%,
-                    rgba(0, 0, 0, 0.8) 100%
-                );
+                background: linear-gradient(180deg,
+                        rgba(0, 0, 0, 0) 0%,
+                        rgba(0, 0, 0, 0.8) 100%);
                 display: block;
                 position: absolute;
                 top: 0;
@@ -241,6 +241,7 @@
 
         #cs-form {
             max-width: calc(630 / 16 * 1rem);
+
             label {
                 width: 100%;
             }
@@ -250,15 +251,15 @@
             width: 40%;
             max-width: calc(542 / 16 * 1rem);
             /* changes to 578px at 1300px wide */
-            height: calc(686 / 16 * 1rem);
+            // height: calc(686 / 16 * 1rem);
             /* prevents flexbox from squishing it */
             flex: none;
 
-            &:hover {
-                .cs-bg-picture {
-                    transform: scale(1.1);
-                }
-            }
+            // &:hover {
+            //     .cs-bg-picture {
+            //         transform: scale(1.1);
+            //     }
+            // }
         }
 
         .cs-block {
@@ -273,6 +274,7 @@
     #cs-contact {
         #cs-form {
             column-gap: calc(0 / 16 * 1rem);
+
             label {
                 width: 48%;
                 max-width: calc(305 / 16 * 1rem);
@@ -293,12 +295,14 @@
 @media only screen and (min-width: 0em) {
     body.dark-mode {
         #cs-contact {
+
             .cs-text,
             .cs-title {
                 color: var(--bodyTextColorWhite);
             }
 
             #cs-form {
+
                 label,
                 input,
                 textarea {

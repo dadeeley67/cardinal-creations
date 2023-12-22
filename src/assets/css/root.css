@@ -1210,6 +1210,9 @@
   #footer .right-section .buttons {
     justify-content: flex-start;
   }
+  #footer .credit .tag {
+    display: inline-block;
+  }
   #footer .credit .copyright {
     display: inline-block;
   }

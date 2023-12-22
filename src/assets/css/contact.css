@@ -38,7 +38,6 @@
   #cs-contact .cs-text {
     text-align: left;
     /* 404px - 522px */
-    max-width: clamp(25.25rem, 30vw, 32.625rem);
     margin: 0 auto 0 0;
     /* 40px - 48px */
     margin-bottom: clamp(2.5rem, 6.3vw, 3rem);
@@ -89,7 +88,6 @@
     border: none;
   }
   #cs-contact .cs-right-section {
-    height: 20rem;
     /* 24px - 40px top & bottom */
     /* 20px - 40px left & right */
     padding: clamp(1.5rem, 3vw, 2.5rem) clamp(1.25rem, 3vw, 2.5rem);
@@ -101,6 +99,7 @@
     position: relative;
     /* cuts off corners on img tag */
     overflow: hidden;
+    background-color: var(--primary);
   }
   #cs-contact .cs-header {
     /* 16px - 20px */
@@ -211,12 +210,8 @@
     width: 40%;
     max-width: 33.875rem;
     /* changes to 578px at 1300px wide */
-    height: 42.875rem;
     /* prevents flexbox from squishing it */
     flex: none;
-  }
-  #cs-contact .cs-right-section:hover .cs-bg-picture {
-    transform: scale(1.1);
   }
   #cs-contact .cs-block {
     /* goes back to inline so it stays "in line" with the rest of the text */
