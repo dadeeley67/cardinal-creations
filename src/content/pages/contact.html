@@ -4,84 +4,84 @@ description: 'Meta description for the page'
 preloadImg: '/assets/images/cabinets2.jpg'
 permalink: 'contact/'
 eleventyNavigation:
-key: /contact
-order: 500
+    key: /contact
+    order: 300
 ---
 
 {% extends "layouts/base.html" %}
 
 {% block head %}
-<link rel="stylesheet" href="/assets/css/contact.css">
+    <link rel="stylesheet" href="/assets/css/contact.css">
 {% endblock %}
 
 {% block body %}
 
-<!-- ============================================ -->
-<!--                    LANDING                   -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
 
-<section id="int-hero">
-    <h1 id="home-h">Say Hello</h1>
-    <picture>
-        <source media="(max-width: 600px)" srcset="/assets/images/writing.jpg">
-        <source media="(min-width: 601px)" srcset="/assets/images/writing.jpg">
-        <img aria-hidden="true" decoding="async" src="/assets/images/writing.jpg" alt="kitchen cabinets" loading="eager"
+    <section id="int-hero">
+        <h1 id="home-h">Say Hello</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/writing.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/writing.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/writing.jpg" alt="kitchen cabinets" loading="eager"
             width="2500" height="1667">
-    </picture>
-</section>
+        </picture>
+    </section>
 
-<!-- ============================================ -->
-<!--                Contact Form                  -->
-<!-- ============================================ -->
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
 
-<section id="cs-contact">
-    <div class="cs-container">
-        <form id="cs-form" name="Contact Form" method="post" data-netlify="true">
-            <div class="cs-content">
-                <span class="cs-topper">Contact</span>
-                <h2 class="cs-title">Hey, how's it going?</h2>
-                <p class="cs-text">
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post" data-netlify="true">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Hey, how's it going?</h2>
+                    <p class="cs-text">
                     Nice, I'm pretty good, too. Shoot me a message if you want to say hi or share
                     something with me. Or, even better, if you want to inquire about business, I'd love to get in touch
                     and see if we can work together to make you something beautiful.
                 </p>
-            </div>
-            <label>
+                </div>
+                <label>
                 Name
                 <input required type="text" id="name" name="name" placeholder="Name">
-            </label>
-            <label>
+                </label>
+                <label>
                 Email
                 <input required type="text" id="email" name="email" placeholder="Email">
-            </label>
-            <label>
+                </label>
+                <label>
                 Phone
                 <input required type="text" id="phone" name="phone" placeholder="Phone">
-            </label>
-            <label>
+                </label>
+                <label>
                 How Did You Find Me
                 <input type="text" id="find" name="find-us" placeholder="How did you find me?">
-            </label>
-            <label class="cs-label-message">
+                </label>
+                <label class="cs-label-message">
                 Message
                 <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
-            </label>
-            <button class="cs-button-solid" type="submit">Submit Message</button>
-        </form>
-        <div class="cs-right-section">
-            <!-- <picture class="cs-bg-picture">
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message</button>
+            </form>
+            <div class="cs-right-section">
+                <!-- <picture class="cs-bg-picture">
                 <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
                 <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building"
                     loading="lazy" width="2500" height="1667">
             </picture> -->
-            <!--Email-->
-            <span class="cs-header">Email</span>
-            <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
-            <!--Phone-->
-            <span class="cs-header">Phone</span>
-            <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
-            <!--Address-->
-            <!-- <span class="cs-header">Address</span>
+                <!--Email-->
+                <span class="cs-header">Email</span>
+                <a class="cs-link" href="mailto:{{client.email}}">{{client.email}}</a>
+                <!--Phone-->
+                <span class="cs-header">Phone</span>
+                <a class="cs-link" href="tel:{{client.phoneForTel}}">{{client.phoneFormatted}}</a>
+                <!--Address-->
+                <!-- <span class="cs-header">Address</span>
             <a class="cs-link" href="{{client.address.mapLink}}">
                 {{client.address.lineOne}},
                 <br />
@@ -94,14 +94,14 @@ order: 500
                 </span>
             </a> -->
 
-            <!-- Background Image-->
-            <!-- <picture class="cs-bg-picture">
+                <!-- Background Image-->
+                <!-- <picture class="cs-bg-picture">
                 <source media="(min-width: 601px)" srcset="/assets/images/skyscraper.jpg">
                 <img aria-hidden="true" decoding="async" src="/assets/images/skyscraper.jpg" alt="building"
                     loading="lazy" width="2500" height="1667">
             </picture> -->
 
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 {% endblock %}
