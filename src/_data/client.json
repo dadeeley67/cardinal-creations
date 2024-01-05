@@ -1,8 +1,8 @@
 {
     "name": "Cardinal Creations Web Design",
     "email": "dave@cardinalcreations.dev",
-    "phoneForTel": "315-225-4726",
-    "phoneFormatted": "(315) 225-4726",
+    "phoneForTel": "",
+    "phoneFormatted": "",
     "address": {
         "lineOne": "First Address Line",
         "lineTwo": "Second Address Line",
